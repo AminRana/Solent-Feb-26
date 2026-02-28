@@ -1,4 +1,4 @@
-# Basic if statement
+#1 Basic if statement
 x = 3
 y = 10
 
@@ -6,7 +6,8 @@ if x < y:
     print("x is smaller than y.")
 
 
-# A slightly more complex example
+#2 A slightly more complex example
+# you can also write this in single line x,y,z =3,10,None
 x = 3
 y = 10
 z = None
@@ -16,14 +17,14 @@ if x < y:
 print(f"Variable z is now {z}.")
 
 
-# What happens here?
+#3 What happens here?
 x = 3
 y = 10
 
 if x > y:
     print("x is greater than y.")
 
-# else statement
+#4 else statement
 x = 3
 y = 10
 
@@ -33,7 +34,7 @@ else:
     print("x is smaller than y.")
 
 
-# What if the condition is met?
+#5 What if the condition is met?
 x = 3
 y = 10
 
@@ -42,7 +43,7 @@ if x < y:
 else:
     print("x is greater than y.")
 
-# x is equal to y
+#5 x is equal to y
 x = 3
 y = 3
 
@@ -52,7 +53,7 @@ else:
     print("x is greater than y.")
 
 
-# x is equal to y with elif statement
+#6 x is equal to y with elif statement
 x = 3
 y = 3
 
@@ -64,7 +65,7 @@ else:
     print("x is greater than y.")
 
 
-# elif condition
+#7 elif condition
 tomorrow = "warm"
 
 if tomorrow == "warm":
@@ -75,7 +76,7 @@ else:
     print("I'll stay home.")
 
 
-# Tomorrow is very hot
+#8 Tomorrow is very hot
 tomorrow = "very hot"
 
 if tomorrow == "warm":
@@ -86,7 +87,7 @@ else:
     print("I'll stay home.")
 
 
-# Several elif conditions
+#9 Several elif conditions
 tomorrow = "snowy"
 
 if tomorrow == "warm":
@@ -101,7 +102,7 @@ else:
     print("Weather not recognized.")
 
 
-# Biome prediction with and logical operator
+#10 Biome prediction with and logical operator
 humidity = "low"
 temperature = "high"
 
@@ -114,7 +115,7 @@ elif humidity == "high" and temperature == "high":
 else:
     print("I don't know!")
 
-# or logical operator
+#11 or logical operator
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 nums_less_3_greater_equal_10 = []
 
@@ -125,7 +126,7 @@ for num in nums:
 print(nums_less_3_greater_equal_10)
 
 
-# Change or to and
+#12 Change or to and
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 nums_less_3_greater_equal_10 = []
 
@@ -135,7 +136,7 @@ for num in nums:
 
 print(nums_less_3_greater_equal_10)
 
-# More complex logical statements
+#13 More complex logical statements
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 nums_less_3_greater_equal_10_multiple_2 = []
 
@@ -145,7 +146,7 @@ for num in nums:
 
 print(nums_less_3_greater_equal_10_multiple_2)
 
-# More complex logical statements without parentheses
+#14 More complex logical statements without parentheses
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 nums_less_3_greater_equal_10_multiple_2 = []
 
@@ -156,7 +157,7 @@ for num in nums:
 print(nums_less_3_greater_equal_10_multiple_2)
 
 
-# Nested if statements
+#15 Nested if statements
 mark =  85
 
 if mark >= 60 and mark <= 100:
@@ -176,7 +177,7 @@ else:
     print("Failed.")
 
 
-# Pattern matching with match..case syntax
+#16 Pattern matching with match..case syntax
 tomorrow = "snowy"
 
 match tomorrow:
@@ -191,7 +192,7 @@ match tomorrow:
     case _:
         print("Weather not recognized.")
 
-# Without pass
+#17 Without pass
 num = 3
 if num == 3:
 
@@ -205,7 +206,7 @@ if num == 3:
 
 print("I'll write this code later.")
 
-# With pass
+#18 With pass
 num = 4
 if num == 3:
     pass
