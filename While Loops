@@ -1,5 +1,4 @@
-
-# Declare a variable to count the current number of iterations
+"""# Declare a variable to count the current number of iterations
 iterations = 0
 # Display ready message
 print("Starting iterations...")
@@ -11,7 +10,7 @@ while iterations < 10:
 print(f"Completed {iterations}!")
 
 
-#Actovity 2
+
 x= int (input("How many apples should I remove?\n "))
 removed_count =0
 while removed_count < x:
@@ -19,10 +18,46 @@ while removed_count < x:
     removed_count = removed_count + 1
 
 
-#Activity 3
+#Activity2
+total_obstacles= int(input("How many obstacles must I avoid?\n "))
+
+obstacles_avoided= 0
+while obstacles_avoided < total_obstacles:
+    print ("avoiding ...")
+    obstacles_avoided = obstacles_avoided + 1
+    print (f" ... Done! {obstacles_avoided} obstacles avoided!")
+
+# Activity 3
 target_bars=int(input("How many bars would you like?\n "))
 bars_charged=0
 while bars_charged < target_bars:
     bars_charged = bars_charged + 1
     print("Charging: " + "\u2591" *bars_charged)
-print(" The battery is fully c
+print(" The battery is fully charged")
+
+#Activity 4
+# Display the message "Please enter a phrase:"
+print("Please enter a phrase:")
+
+# Read the user's response
+phrase = input()
+
+# Get the number of characters in the phrase using len()
+char_count = len(phrase)
+
+# Display the word "Hi" repeatedly x number of times
+# We use the multiplication operator on the string with a space for formatting
+print("Hi " * char_count)
+
+"""
+
+#Activity 5
+
+print("Calculating the sum of the first 100 numbers")
+
+total_sum = 0
+number=1
+while number <=100:
+    total_sum +=number
+    number+=1
+print(f"...Done!The total sum is: {total_sum}.")
