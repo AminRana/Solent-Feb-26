@@ -1,0 +1,73 @@
+#Activity 3
+# Function 1: Displays the word inside an ASCII art box
+def display_in_box(word):
+    length = len(word)
+    # Create top and bottom borders based on word length
+    border = "+" + "-" * (length + 2) + "+"
+    print(border)
+    print(f"| {word} |")
+    print(border)
+
+
+# Function 2: Displays the word in lower-case
+def display_lower(word):
+    print(word.lower())
+
+
+# Function 3: Displays the word in upper-case
+def display_upper(word):
+    print(word.upper())
+
+
+# Function 4: Displays the word and its mirrored version
+def display_mirrored(word):
+    # Use string slicing [::-1] to reverse the word
+    mirrored = word[::-1]
+    print(f"{word} | {mirrored}")
+
+
+# Function 5: Repeats the word while alternating case
+def repeat_word(word):
+    try:
+        count = int(input("How many times to display the word? "))
+        for i in range(count):
+            # If the index is even, show upper; if odd, show lower
+            if i % 2 == 0:
+                print(word.upper())
+            else:
+                print(word.lower())
+    except ValueError:
+        print("Please enter a valid number for repetition.")
+
+
+# Function 6: The main function to run the program
+def run_program():
+    print("--- Word Manipulation Map ---")
+    user_word = input("Please enter a word: ")
+
+    print("\nChoose an option:")
+    print("1) Display in a Box")
+    print("2) Display Lower-case")
+    print("3) Display Upper-case")
+    print("4) Display Mirrored")
+    print("5) Repeat (Alternating Case)")
+
+    choice = input("Option number: ")
+
+    # Logic to route the user to the correct function
+    if choice == "1":
+        display_in_box(user_word)
+    elif choice == "2":
+        display_lower(user_word)
+    elif choice == "3":
+        display_upper(user_word)
+    elif choice == "4":
+        display_mirrored(user_word)
+    elif choice == "5":
+        repeat_word(user_word)
+    else:
+        print("Invalid option selected.")
+
+
+# Start the program
+run_program()
