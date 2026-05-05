@@ -1,0 +1,26 @@
+class Person:
+    def __init__(self, name, age=0, weight=0):
+        # This sets up the attributes for the specific object
+        self.name = name
+        self.age = age
+        self.weight = weight
+
+    def display(self):
+        # This prints the formatted string using the object's data
+        print(f"{self.name} is {self.age} years old and weighs {self.weight}kg")
+
+
+# --- Code to execute and get output ---
+
+if __name__ == "__main__":
+    # 1. Create an instance with all arguments
+    person1 = Person("Alice", 25, 65)
+    person1.display()
+
+    # 2. Create an instance using default values for age and weight
+    person2 = Person("W")
+    person2.display()
+
+    # 3. Create an instance with name and age, using default weight
+    person3 = Person("Charlie", 30)
+    person3.display()
