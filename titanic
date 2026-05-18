@@ -1,0 +1,43 @@
+import csv
+
+# Global variables
+records = []
+headings = []
+
+
+def load_data(file_path):
+    # Indicate that we are using the global variables defined above
+    global records
+    global headings
+
+    print("Loading data...", end="")
+
+    # Open the file for reading
+    with open(file_path, mode="r", encoding="utf-8") as file:
+        csv_reader = csv.reader(file)
+
+        # Read the first line (headings) and assign it to the global variable
+        headings = next(csv_reader)
+
+        # Read each remaining line and append it to the records list
+        for row in csv_reader:
+            records.append(row)
+
+    print("Done!")
+
+
+def run():
+    # Define the relative path to the csv file
+    path = "C:/Users/taluk/PycharmProjects/week11/titanic.csv"
+
+    # Call the load function
+    load_data(path)
+
+    # Calculate the number of records using len()
+    num_records = len(records)
+    print(f"Successfully loaded {num_records} records.")
+
+
+# Execute the run function
+if __name__ == "__main__":
+    run()
